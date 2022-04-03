@@ -38,7 +38,10 @@
             <hr />
             <a href="https://github.com/chaqmoq" target="_blank"><img src="github.png" alt="" width="36" height="36" /></a>
             <a href="https://twitter.com/chaqmoqdev" target="_blank"><img src="twitter.png" alt="" width="36" height="36" /></a>
-            <p class="mt-4 text-muted">&copy; 2020-2021 Chaqmoq</p>
+            <p class="mt-4 text-muted">&copy; 2020-<span id="currentYear"></span> Chaqmoq</p>
         </div>
+        <script type="text/javascript">
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
